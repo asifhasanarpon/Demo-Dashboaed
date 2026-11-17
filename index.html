@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Dashboard 2 - Creative Tim</title>
+  
+  <!-- Premium Modern Typography: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="professional-mode bg-executive theme-dark">
+
+  <!-- Scenic Landscape Oil Painting Art Wallpaper Background -->
+  <div class="scenic-background" id="scenicBackground">
+    <div class="scenic-ambient-glow"></div>
+  </div>
+
+  <!-- Main Floating Dashboard Glass Shell Wrapper -->
+  <div class="dashboard-wrapper">
+    <div class="dashboard-container" id="dashboardContainer">
+      
+      <!-- ================= SIDEBAR ================= -->
+      <aside class="sidebar" id="sidebar">
+        <!-- Sidebar Brand -->
+        <div class="sidebar-header">
+          <div class="brand-logo" id="brandLogo">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text-wrapper">
+            <span class="brand-title">Creative Tim</span>
+            <span class="brand-badge">PRO UI</span>
+          </div>
+          <button class="btn-close-sidebar d-xl-none" id="closeSidebarBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Sidebar Navigation List -->
+        <nav class="sidebar-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <div class="nav-icon"><i class="fa-solid fa-table-columns"></i></div>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-table"></i></div>
+                <span class="nav-text">Tables</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-receipt"></i></div>
+                <span class="nav-text">Billing</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                <span class="nav-text">Virtual Reality</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-language"></i></div>
+                <span class="nav-text">RTL</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link position-relative">
+                <div class="nav-icon"><i class="fa-regular fa-bell"></i></div>
+                <span class="nav-text">Notifications</span>
+                <span class="nav-counter-pill">3</span>
+              </a>
+            </li>
+
+            <li class="nav-heading">ACCOUNT PAGES</li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-regular fa-user"></i></div>
+                <span class="nav-text">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                <span class="nav-text">Sign In</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon"><i class="fa-solid fa-user-plus"></i></div>
+                <span class="nav-text">Sign Up</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Sidebar Promo Card -->
+        <div class="sidebar-promo-card p-3 my-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="promo-icon"><i class="fa-solid fa-crown text-warning"></i></div>
+            <h6 class="mb-0 text-white font-weight-bold text-xs">Need Documentation?</h6>
+          </div>
+          <p class="text-white-50 text-xxs mb-2">Explore 200+ components, plugins, charts & responsive templates.</p>
+          <button class="btn btn-sm btn-white w-100 text-dark fw-bold text-xxs py-1 shadow-sm" data-bs-toggle="modal" data-bs-target="#upgradeModal">
+            Explore System
+          </button>
+        </div>
+
+        <!-- Sidebar Footer Action (Theme Toggle) -->
+        <div class="sidebar-footer">
+          <button class="btn-theme-toggle" id="themeToggleBtn" title="Cycle through background styles">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Executive Theme</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Sidebar Backdrop for Mobile -->
+      <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+      <!-- ================= MAIN CONTENT AREA ================= -->
+      <main class="main-content">
+        
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+          <div class="navbar-left">
+            <button class="mobile-toggle-btn d-xl-none" id="mobileSidebarToggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="page-meta">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-1">
+                  <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+              </nav>
+              <h2 class="page-title">Dashboard</h2>
+              <p class="page-subtitle">Check the sales, value and bounce rate by country.</p>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <!-- Time Filter Pills -->
+            <div class="filter-pills d-none d-md-flex">
+              <button class="btn-pill active" data-range="today">Today</button>
+              <button class="btn-pill" data-range="week">Week</button>
+              <button class="btn-pill" data-range="month">Month</button>
+              <button class="btn-pill" data-range="year">Year</button>
+            </div>
+
+            <!-- Search Input -->
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="projectSearchInput" class="form-control search-input" placeholder="Type here...">
+            </div>
+
+            <!-- Header Action Icons -->
+            <div class="action-icons">
+              <button class="action-btn" id="configuratorToggleBtn" title="Theme Configurator" data-bs-toggle="offcanvas" data-bs-target="#configuratorOffcanvas">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              
+              <div class="dropdown">
+                <button class="action-btn position-relative" id="notificationsDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Notifications">
+                  <i class="fa-regular fa-bell"></i>
+                  <span class="notification-indicator"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 py-2 rounded-4" aria-labelledby="notificationsDropdown">
+                  <li class="dropdown-header fw-bold text-dark d-flex justify-content-between align-items-center">
+                    <span>Notifications</span>
+                    <span class="badge bg-primary-subtle text-primary text-xxs rounded-pill">3 New</span>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-3 py-2" href="#">
+                      <div class="icon-circle bg-success-subtle text-success">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <div>
+                        <div class="small fw-semibold">New message from Laur</div>
+                        <div class="text-muted smaller">13 mins ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-3 py-2" href="#">
+                      <div class="icon-circle bg-primary-subtle text-primary">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                      </div>
+                      <div>
+                        <div class="small fw-semibold">New payment received: $1,200</div>
+                        <div class="text-muted smaller">2 hrs ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-3 py-2" href="#">
+                      <div class="icon-circle bg-danger-subtle text-danger">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </div>
+                      <div>
+                        <div class="small fw-semibold">Server load peaked at 92%</div>
+                        <div class="text-muted smaller">1 day ago</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="action-btn" title="User Profile" data-bs-toggle="modal" data-bs-target="#profileModal">
+                <i class="fa-regular fa-user"></i>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- KPI Metrics Grid (Row 1) -->
+        <section class="kpi-grid">
+          <!-- KPI 1 -->
+          <div class="card metric-card">
+            <div class="card-body">
+              <div class="metric-header">
+                <div>
+                  <span class="metric-label">Today's Money</span>
+                  <h3 class="metric-value" id="kpiMoney">$53k</h3>
+                </div>
+                <div class="metric-icon-box">
+                  <i class="fa-solid fa-wallet"></i>
+                </div>
+              </div>
+              <div class="metric-footer">
+                <span class="trend-positive"><i class="fa-solid fa-arrow-up-right-dots"></i> +55%</span>
+                <span class="trend-comparison">than last week</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="card metric-card">
+            <div class="card-body">
+              <div class="metric-header">
+                <div>
+                  <span class="metric-label">Today's Users</span>
+                  <h3 class="metric-value" id="kpiUsers">2,300</h3>
+                </div>
+                <div class="metric-icon-box">
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+              </div>
+              <div class="metric-footer">
+                <span class="trend-positive"><i class="fa-solid fa-arrow-up-right-dots"></i> +3%</span>
+                <span class="trend-comparison">than last month</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="card metric-card">
+            <div class="card-body">
+              <div class="metric-header">
+                <div>
+                  <span class="metric-label">Today's Users</span>
+                  <h3 class="metric-value" id="kpiClients">3,462</h3>
+                </div>
+                <div class="metric-icon-box">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+              </div>
+              <div class="metric-footer">
+                <span class="trend-negative"><i class="fa-solid fa-arrow-down-right-dots"></i> -2%</span>
+                <span class="trend-comparison">than yesterday</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="card metric-card">
+            <div class="card-body">
+              <div class="metric-header">
+                <div>
+                  <span class="metric-label">Sales</span>
+                  <h3 class="metric-value" id="kpiSales">$103,430</h3>
+                </div>
+                <div class="metric-icon-box">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              <div class="metric-footer">
+                <span class="trend-positive"><i class="fa-solid fa-arrow-up-right-dots"></i> +5%</span>
+                <span class="trend-comparison">than yesterday</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts Grid (Row 2) -->
+        <section class="charts-grid">
+          <!-- Chart 1: Website Views -->
+          <div class="card chart-card">
+            <div class="card-body">
+              <div class="chart-header">
+                <h4 class="chart-title">Website Views</h4>
+                <p class="chart-subtitle">Last Campaign Performance</p>
+              </div>
+              <div class="chart-canvas-container">
+                <canvas id="websiteViewsChart"></canvas>
+              </div>
+              <div class="chart-divider"></div>
+              <div class="chart-footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>campaign sent 2 days ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart 2: Daily Sales -->
+          <div class="card chart-card">
+            <div class="card-body">
+              <div class="chart-header">
+                <h4 class="chart-title">Daily Sales</h4>
+                <p class="chart-subtitle"><span class="fw-bold text-dark">(+15%)</span> increase in today sales.</p>
+              </div>
+              <div class="chart-canvas-container">
+                <canvas id="dailySalesChart"></canvas>
+              </div>
+              <div class="chart-divider"></div>
+              <div class="chart-footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>updated 4 min ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart 3: Completed Tasks -->
+          <div class="card chart-card">
+            <div class="card-body">
+              <div class="chart-header">
+                <h4 class="chart-title">Completed Tasks</h4>
+                <p class="chart-subtitle">Last Campaign Performance</p>
+              </div>
+              <div class="chart-canvas-container">
+                <canvas id="completedTasksChart"></canvas>
+              </div>
+              <div class="chart-divider"></div>
+              <div class="chart-footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>just updated</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SALES BY COUNTRY SECTION ================= -->
+        <section class="country-sales-section mb-4">
+          <div class="card country-card">
+            <div class="card-body p-4">
+              <div class="row align-items-center g-4">
+                <!-- Country Table (Left) -->
+                <div class="col-lg-7">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="country-icon-box">
+                      <i class="fa-solid fa-earth-americas text-white"></i>
+                    </div>
+                    <div>
+                      <h4 class="section-title mb-0">Sales by Country</h4>
+                      <p class="section-subtitle mb-0">Sales, value and bounce rate by regional performance</p>
+                    </div>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table align-middle mb-0 country-table">
+                      <thead>
+                        <tr>
+                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Country</th>
+                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">Sales</th>
+                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">Value</th>
+                          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">Bounce Rate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center gap-3">
+                              <span class="flag-icon">🇺🇸</span>
+                              <div>
+                                <h6 class="mb-0 text-sm font-weight-bold">United States</h6>
+                                <span class="text-xxs text-muted">2.5k orders</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-center font-weight-bold text-sm">2,500</td>
+                          <td class="text-center font-weight-bold text-sm text-dark">$230,900</td>
+                          <td class="text-center">
+                            <span class="badge-status badge-success">29.9%</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center gap-3">
+                              <span class="flag-icon">🇩🇪</span>
+                              <div>
+                                <h6 class="mb-0 text-sm font-weight-bold">Germany</h6>
+                                <span class="text-xxs text-muted">3.9k orders</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-center font-weight-bold text-sm">3,900</td>
+                          <td class="text-center font-weight-bold text-sm text-dark">$440,000</td>
+                          <td class="text-center">
+                            <span class="badge-status badge-warning">40.22%</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center gap-3">
+                              <span class="flag-icon">🇬🇧</span>
+                              <div>
+                                <h6 class="mb-0 text-sm font-weight-bold">Great Britain</h6>
+                                <span class="text-xxs text-muted">1.4k orders</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-center font-weight-bold text-sm">1,400</td>
+                          <td class="text-center font-weight-bold text-sm text-dark">$190,700</td>
+                          <td class="text-center">
+                            <span class="badge-status badge-success">23.44%</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center gap-3">
+                              <span class="flag-icon">🇧🇷</span>
+                              <div>
+                                <h6 class="mb-0 text-sm font-weight-bold">Brasil</h6>
+                                <span class="text-xxs text-muted">562 orders</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-center font-weight-bold text-sm">562</td>
+                          <td class="text-center font-weight-bold text-sm text-dark">$143,960</td>
+                          <td class="text-center">
+                            <span class="badge-status badge-info">32.14%</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- Country Doughnut Distribution (Right) -->
+                <div class="col-lg-5 ps-lg-4 mt-3 mt-lg-0">
+                  <div class="country-chart-wrapper">
+                    <h6 class="text-sm font-weight-bold mb-3 text-start">Market Share Distribution</h6>
+                    <div style="height: 195px; position: relative;">
+                      <canvas id="countryShareChart"></canvas>
+                    </div>
+                    <div class="d-flex justify-content-around mt-3 pt-3 border-top">
+                      <div class="text-center">
+                        <span class="text-xxs text-muted d-block font-weight-bold">Top Market</span>
+                        <span class="text-xs font-weight-bold text-dark">Germany (44%)</span>
+                      </div>
+                      <div class="text-center">
+                        <span class="text-xxs text-muted d-block font-weight-bold">Global CSAT</span>
+                        <span class="text-xs font-weight-bold text-success">98.4%</span>
+                      </div>
+                      <div class="text-center">
+                        <span class="text-xxs text-muted d-block font-weight-bold">Avg Fulfillment</span>
+                        <span class="text-xs font-weight-bold text-dark">2.4 Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects & Orders Overview (Row 4) -->
+        <section class="details-grid">
+          
+          <!-- Projects Table Card -->
+          <div class="card projects-card">
+            <div class="card-body p-0">
+              <div class="card-header-custom p-4 pb-2 d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="section-title mb-1">Projects</h4>
+                  <p class="section-subtitle mb-0">
+                    <i class="fa-solid fa-check text-info me-1"></i>
+                    <span class="fw-bold text-dark">30 done</span> this month
+                  </p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-sm btn-dark px-3 py-1 text-xxs fw-bold rounded-pill shadow-sm" data-bs-toggle="modal" data-bs-target="#newProjectModal">
+                    <i class="fa-solid fa-plus me-1"></i> New Project
+                  </button>
+                  <div class="dropdown">
+                    <button class="btn btn-icon-ghost" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-3">
+                      <li><a class="dropdown-item" href="#" id="exportCsvBtn"><i class="fa-solid fa-file-export me-2 text-muted"></i>Export CSV</a></li>
+                      <li><a class="dropdown-item" href="#" id="filterCompleteBtn"><i class="fa-solid fa-filter me-2 text-muted"></i>Show Completed (100%)</a></li>
+                      <li><a class="dropdown-item" href="#" id="showAllProjectsBtn"><i class="fa-solid fa-list me-2 text-muted"></i>Show All</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash me-2"></i>Clear archive</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Responsive Table -->
+              <div class="table-responsive px-3 pb-3">
+                <table class="table align-items-center mb-0" id="projectsTable">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-3">COMPANIES</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">MEMBERS</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">BUDGET</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center">COMPLETION</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-end pe-3">ACTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Row 1 -->
+                    <tr class="project-row" data-project="Material XD Version" data-budget="$14,000" data-completion="60" data-status="In Progress">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-xd">
+                            <i class="fa-brands fa-figma"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Material XD Version</h6>
+                            <span class="text-xxs text-muted">UI Kit & Design System</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Ryan" title="Ryan Milly">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Romina" title="Romina Hadid">
+                          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Alexander" title="Alexander Smith">
+                          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Jessica" title="Jessica Doe">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-dark">$14,000</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold">60%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                    <tr class="project-row" data-project="Add Progress Track" data-budget="$3,000" data-completion="10" data-status="Pending">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-atlassian">
+                            <i class="fa-brands fa-atlassian"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Add Progress Track</h6>
+                            <span class="text-xxs text-muted">Sprint Backlog Integration</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Romina" title="Romina Hadid">
+                          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Alexander" title="Alexander Smith">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-dark">$3,000</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold">10%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr class="project-row" data-project="Fix Platform Errors" data-budget="Not set" data-completion="100" data-status="Completed">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-slack">
+                            <i class="fa-brands fa-slack"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Fix Platform Errors</h6>
+                            <span class="text-xxs text-muted">Bug Fixes & Security Patch</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Ryan" title="Ryan Milly">
+                          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Jessica" title="Jessica Doe">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-muted">Not set</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold text-success">100%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr class="project-row" data-project="Launch our Mobile App" data-budget="$20,500" data-completion="100" data-status="Completed">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-spotify">
+                            <i class="fa-brands fa-spotify"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Launch our Mobile App</h6>
+                            <span class="text-xxs text-muted">iOS & Android Deployment</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Ryan" title="Ryan Milly">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Romina" title="Romina Hadid">
+                          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Alexander" title="Alexander Smith">
+                          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Jessica" title="Jessica Doe">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-dark">$20,500</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold text-success">100%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr class="project-row" data-project="Add the New Pricing Page" data-budget="$500" data-completion="25" data-status="In Progress">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-jira">
+                            <i class="fa-brands fa-jira"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Add the New Pricing Page</h6>
+                            <span class="text-xxs text-muted">Subscription Model Overhaul</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Romina" title="Romina Hadid">
+                          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Alexander" title="Alexander Smith">
+                          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Jessica" title="Jessica Doe">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-dark">$500</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold">25%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- Row 6 -->
+                    <tr class="project-row" data-project="Redesign New Online Shop" data-budget="$2,000" data-completion="40" data-status="In Progress">
+                      <td>
+                        <div class="d-flex px-2 py-1 align-items-center">
+                          <div class="company-icon-badge bg-invision">
+                            <i class="fa-brands fa-invision"></i>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center ms-3">
+                            <h6 class="mb-0 text-sm font-weight-bold project-name">Redesign New Online Shop</h6>
+                            <span class="text-xxs text-muted">E-Commerce Checkout Flow</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Ryan" title="Ryan Milly">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=80" class="avatar avatar-xs rounded-circle" alt="Romina" title="Romina Hadid">
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold text-dark">$2,000</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <span class="me-2 text-xs font-weight-bold">40%</span>
+                          <div class="progress progress-sm flex-grow-1" style="max-width: 100px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-end pe-3">
+                        <button class="btn btn-sm btn-icon-ghost view-project-btn" title="View Details">
+                          <i class="fa-regular fa-eye"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orders Overview Card -->
+          <div class="card orders-card">
+            <div class="card-body p-4">
+              <div class="orders-header mb-4 d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="section-title mb-1">Orders overview</h4>
+                  <p class="section-subtitle mb-0">
+                    <i class="fa-solid fa-arrow-up text-success me-1"></i>
+                    <span class="fw-bold text-dark">24%</span> this month
+                  </p>
+                </div>
+                <button class="btn btn-sm btn-icon-ghost" id="refreshOrdersBtn" title="Refresh Feed">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+              </div>
+
+              <!-- Timeline of Orders -->
+              <div class="timeline" id="ordersTimeline">
+                <!-- Item 1 -->
+                <div class="timeline-item" data-title="$2,400, Design changes" data-time="22 DEC 7:20 PM" data-desc="Client approved Adobe XD wireframe package. Invoice #INV-8834 marked paid.">
+                  <div class="timeline-badge bg-success-subtle text-success">
+                    <i class="fa-solid fa-bell"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">$2400, Design changes</h6>
+                    <span class="timeline-time">22 DEC 7:20 PM</span>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item" data-title="New order #1832412" data-time="21 DEC 11 PM" data-desc="Order placed via Shopify gateway by Enterprise customer in Munich.">
+                  <div class="timeline-badge bg-danger-subtle text-danger">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">New order #1832412</h6>
+                    <span class="timeline-time">21 DEC 11 PM</span>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item" data-title="Server payments for April" data-time="21 DEC 9:34 PM" data-desc="AWS & GCP cloud hosting auto-renewed successfully ($480.00).">
+                  <div class="timeline-badge bg-primary-subtle text-primary">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">Server payments for April</h6>
+                    <span class="timeline-time">21 DEC 9:34 PM</span>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item" data-title="New card added for order #4395137" data-time="20 DEC 2:20 AM" data-desc="Visa Platinum ending in 4092 authorized for quarterly billing.">
+                  <div class="timeline-badge bg-warning-subtle text-warning">
+                    <i class="fa-solid fa-credit-card"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">New card added for order #4395137</h6>
+                    <span class="timeline-time">20 DEC 2:20 AM</span>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item" data-title="Unlock packages for development" data-time="18 DEC 4:54 AM" data-desc="Private npm registry token generated for engineering team.">
+                  <div class="timeline-badge bg-secondary-subtle text-primary-emphasis">
+                    <i class="fa-solid fa-key"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">Unlock packages for development</h6>
+                    <span class="timeline-time">18 DEC 4:54 AM</span>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="timeline-item" data-title="New order #958312" data-time="17 DEC" data-desc="Customer renewed Developer Tier subscription plan.">
+                  <div class="timeline-badge bg-dark-subtle text-dark">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h6 class="timeline-title">New order #958312</h6>
+                    <span class="timeline-time">17 DEC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+
+      <!-- Floating Tech Badge (Bootstrap 5) at Bottom Center -->
+      <div class="floating-badge-pill" id="bootstrapBadge" title="Built with Bootstrap 5.3">
+        <span class="badge-icon-b">B</span>
+        <span class="badge-label">Bootstrap 5</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CREATIVE TIM CONFIGURATOR OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end configurator-drawer border-0 shadow-lg" tabindex="-1" id="configuratorOffcanvas" aria-labelledby="configuratorLabel">
+    <div class="offcanvas-header pb-0">
+      <div>
+        <h5 class="offcanvas-title fw-bold text-dark" id="configuratorLabel">Material UI Configurator</h5>
+        <p class="text-muted text-xs mb-0">Customize your dashboard theme & layout</p>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-3">
+      <!-- Accent Colors -->
+      <div class="mb-4">
+        <h6 class="text-xs font-weight-bold text-dark text-uppercase mb-2">Sidebar Accent Color</h6>
+        <div class="color-palette-options d-flex gap-2">
+          <button class="color-circle bg-dark-color active" data-color="dark" title="Dark Slate"></button>
+          <button class="color-circle bg-pink" data-color="primary" title="Primary Pink"></button>
+          <button class="color-circle bg-info-color" data-color="info" title="Vibrant Blue"></button>
+          <button class="color-circle bg-success-color" data-color="success" title="Emerald Green"></button>
+          <button class="color-circle bg-warning-color" data-color="warning" title="Orange Amber"></button>
+          <button class="color-circle bg-danger-color" data-color="danger" title="Ruby Red"></button>
+        </div>
+      </div>
+
+      <hr class="horizontal-rule">
+
+      <!-- Background Style Presets -->
+      <div class="mb-4">
+        <h6 class="text-xs font-weight-bold text-dark text-uppercase mb-2">Professional Background</h6>
+        <div class="bg-preset-grid">
+          <button type="button" class="btn-preset active" data-bg="bg-executive">
+            <i class="fa-solid fa-briefcase"></i> Executive Slate
+          </button>
+          <button type="button" class="btn-preset" data-bg="bg-grid">
+            <i class="fa-solid fa-border-all"></i> Engineering Grid
+          </button>
+          <button type="button" class="btn-preset" data-bg="bg-aurora">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Aurora SaaS
+          </button>
+          <button type="button" class="btn-preset" data-bg="bg-scenic">
+            <i class="fa-solid fa-mountain-sun"></i> Scenic Canvas
+          </button>
+        </div>
+      </div>
+
+      <!-- Sidenav Type -->
+      <div class="mb-4">
+        <h6 class="text-xs font-weight-bold text-dark text-uppercase mb-2">Sidenav Type</h6>
+        <p class="text-xxs text-muted">Choose between 3 different sidenav presentations.</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-sm btn-outline-dark flex-grow-1 active" id="sidenavDarkBtn">Dark</button>
+          <button class="btn btn-sm btn-outline-dark flex-grow-1" id="sidenavTransparentBtn">Transparent</button>
+          <button class="btn btn-sm btn-outline-dark flex-grow-1" id="sidenavWhiteBtn">White</button>
+        </div>
+      </div>
+
+      <hr class="horizontal-rule">
+
+      <!-- Switches -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <h6 class="text-xs font-weight-bold text-dark mb-0">Navbar Fixed</h6>
+          <span class="text-xxs text-muted">Keep top navigation sticky</span>
+        </div>
+        <div class="form-check form-switch ps-0">
+          <input class="form-check-input ms-auto" type="checkbox" id="navbarFixedSwitch" checked>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h6 class="text-xs font-weight-bold text-dark mb-0">Light / Dark Mode</h6>
+          <span class="text-xxs text-muted">Toggle high-contrast theme</span>
+        </div>
+        <div class="form-check form-switch ps-0">
+          <input class="form-check-input ms-auto" type="checkbox" id="darkModeSwitch">
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="mt-4">
+        <button class="btn btn-dark w-100 py-2 font-weight-bold text-xs mb-2 shadow-sm" id="downloadReportBtn">
+          <i class="fa-solid fa-download me-1"></i> Download PDF Report
+        </button>
+        <a href="https://github.com" target="_blank" class="btn btn-outline-secondary w-100 py-2 font-weight-bold text-xs">
+          <i class="fa-brands fa-github me-1"></i> Star On GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: PROJECT DETAILS ================= -->
+  <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <span class="badge bg-primary-subtle text-primary text-xxs font-weight-bold mb-1" id="modalProjectStatus">In Progress</span>
+            <h5 class="modal-title font-weight-bold text-dark" id="modalProjectTitle">Project Details</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-3">
+          <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-3 mb-3">
+            <div>
+              <span class="text-xxs text-muted d-block">Allocated Budget</span>
+              <span class="text-sm font-weight-bold text-dark" id="modalProjectBudget">$14,000</span>
+            </div>
+            <div>
+              <span class="text-xxs text-muted d-block">Completion Progress</span>
+              <span class="text-sm font-weight-bold text-success" id="modalProjectPercent">60%</span>
+            </div>
+            <div>
+              <span class="text-xxs text-muted d-block">Due Date</span>
+              <span class="text-sm font-weight-bold text-dark">Dec 31, 2026</span>
+            </div>
+          </div>
+
+          <h6 class="text-xs font-weight-bold text-dark mb-2">Milestone Checklist</h6>
+          <ul class="list-group list-group-flush small">
+            <li class="list-group-item px-0 py-2 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-circle-check text-success"></i>
+              <span>Information Architecture & Wireframes</span>
+            </li>
+            <li class="list-group-item px-0 py-2 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-circle-check text-success"></i>
+              <span>High Fidelity Responsive UI Prototype</span>
+            </li>
+            <li class="list-group-item px-0 py-2 d-flex align-items-center gap-2">
+              <i class="fa-regular fa-circle text-muted"></i>
+              <span>Frontend Integration & Acceptance Tests</span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-dark" id="btnUpdateProject">Update Milestone</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: NEW PROJECT ================= -->
+  <div class="modal fade" id="newProjectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title font-weight-bold text-dark">Create New Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="newProjectForm">
+          <div class="modal-body py-3">
+            <div class="mb-3">
+              <label class="form-label text-xs font-weight-bold text-dark">Project Name</label>
+              <input type="text" class="form-control form-control-sm" id="inputProjName" placeholder="e.g. NextGen Mobile Checkout" required>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label text-xs font-weight-bold text-dark">Budget ($)</label>
+                <input type="text" class="form-control form-control-sm" id="inputProjBudget" placeholder="$12,000" required>
+              </div>
+              <div class="col-6">
+                <label class="form-label text-xs font-weight-bold text-dark">Platform Icon</label>
+                <select class="form-select form-select-sm" id="inputProjIcon">
+                  <option value="bg-xd fa-brands fa-figma">Figma / XD</option>
+                  <option value="bg-atlassian fa-brands fa-atlassian">Atlassian</option>
+                  <option value="bg-slack fa-brands fa-slack">Slack</option>
+                  <option value="bg-spotify fa-brands fa-spotify">Spotify</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-xs font-weight-bold text-dark">Initial Completion</label>
+              <input type="range" class="form-range" min="0" max="100" value="15" id="inputProjCompletion">
+              <div class="text-end text-xxs text-muted"><span id="rangeVal">15</span>%</div>
+            </div>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-sm btn-dark">Add Project</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: ORDER DETAILS ================= -->
+  <div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <span class="badge bg-success-subtle text-success text-xxs font-weight-bold mb-1">Verified Order</span>
+            <h5 class="modal-title font-weight-bold text-dark" id="orderModalTitle">Order #</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-3">
+          <p class="text-muted text-xs mb-3" id="orderModalDesc">Order Details</p>
+          <div class="p-3 bg-light rounded-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-xxs text-muted">Timestamp</span>
+              <span class="text-xxs font-weight-bold text-dark" id="orderModalTime">22 DEC 7:20 PM</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-xxs text-muted">Payment Method</span>
+              <span class="text-xxs font-weight-bold text-dark">Stripe Express Checkout</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-xxs text-muted">Delivery Status</span>
+              <span class="text-xxs font-weight-bold text-success">Fulfilled</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-dark">Download Invoice</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: USER PROFILE ================= -->
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-body text-center p-4">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=160&auto=format&fit=crop&q=80" class="rounded-circle shadow mb-3" width="80" height="80" alt="Avatar">
+          <h5 class="font-weight-bold text-dark mb-0">Alec Thompson</h5>
+          <p class="text-muted text-xs mb-3">Lead Product Designer & Admin</p>
+          <div class="d-flex justify-content-center gap-3 mb-4">
+            <div>
+              <span class="fw-bold text-dark d-block">142</span>
+              <span class="text-xxs text-muted">Projects</span>
+            </div>
+            <div>
+              <span class="fw-bold text-dark d-block">3.8k</span>
+              <span class="text-xxs text-muted">Followers</span>
+            </div>
+            <div>
+              <span class="fw-bold text-dark d-block">98%</span>
+              <span class="text-xxs text-muted">Satisfaction</span>
+            </div>
+          </div>
+          <button class="btn btn-sm btn-dark w-100 rounded-pill" data-bs-dismiss="modal">Account Settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chart.js 4.4.1 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Application Logic & Chart Initialization -->
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
